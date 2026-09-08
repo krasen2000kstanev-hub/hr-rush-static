@@ -1,0 +1,2 @@
+# hr-rush-static
+

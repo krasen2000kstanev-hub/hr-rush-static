@@ -1,0 +1,16 @@
+name = "hr-rush-for-practice-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Same pattern as sofiasummit-events-api: one D1 database bound as `DB`.
+# After `wrangler d1 create hr-rush-for-practice`, paste the printed
+# database_id below (the name can stay as-is).
+[[d1_databases]]
+binding = "DB"
+database_name = "hr-rush-for-practice"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Allowed origin(s) for CORS — the GitHub Pages site (and later the custom
+# domain, once one is pointed at it) that's allowed to call this API.
+[vars]
+ALLOWED_ORIGIN = "https://krasen2000kstanev-hub.github.io"
